@@ -20,9 +20,6 @@
               <li class="rev-Menu-item">
                 <a href="<%= page_path(@conn, :index) %>">Home</a>
               </li>
-              <li class="rev-Menu-item">
-                <a href="<%= session_path(@conn, :new) %>">Log In</a>
-              </li>
             </ul>
           </div>
         </nav>
