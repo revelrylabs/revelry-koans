@@ -3,7 +3,7 @@ _Build Badges_
 Staging: [ ![Codeship Status for revelrylabs/changeme](https://app.codeship.com/projects/[ID]/status?branch=develop)](https://app.codeship.com/projects/[id])
 Production: ![Codeship Status for revelrylabs/changeme](https://app.codeship.com/projects/[ID]/status?branch=master)](https://app.codeship.com/projects/[id])
 
-# Revelry-koans
+# RevelryKoans
 
 Product Owner:
 

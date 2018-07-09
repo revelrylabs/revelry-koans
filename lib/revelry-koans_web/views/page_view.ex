@@ -1,3 +1,3 @@
-defmodule revelry-koansWeb.PageView do
-  use revelry-koansWeb, :view
+defmodule RevelryKoansWeb.PageView do
+  use RevelryKoansWeb, :view
 end

@@ -3,8 +3,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode development",
-    "deploy":
-      "BABEL_ENV=production NODE_ENV=production webpack --mode production"
+    "deploy": "BABEL_ENV=production NODE_ENV=production webpack --mode production"
   },
   "dependencies": {
     "harmonium": "^3.5.3",

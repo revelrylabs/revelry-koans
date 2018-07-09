@@ -1,5 +1,5 @@
-defmodule revelry-koansWeb.SessionController.Test do
-  use revelry-koansWeb.ConnCase
+defmodule RevelryKoansWeb.SessionController.Test do
+  use RevelryKoansWeb.ConnCase
   alias Comeonin.Bcrypt
 
   test "GET /session/new", %{conn: conn} do

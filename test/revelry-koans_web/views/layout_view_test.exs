@@ -1,3 +1,3 @@
-defmodule revelry-koansWeb.LayoutViewTest do
-  use revelry-koansWeb.ConnCase, async: true
+defmodule RevelryKoansWeb.LayoutViewTest do
+  use RevelryKoansWeb.ConnCase, async: true
 end

@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :Revelry-koans, revelry-koansWeb.Endpoint,
+config :RevelryKoans, RevelryKoansWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -25,13 +25,13 @@ config :Revelry-koans, revelry-koansWeb.Endpoint,
 
 
 # Watch static and templates for browser reloading.
-config :Revelry-koans, revelry-koansWeb.Endpoint,
+config :RevelryKoans, RevelryKoansWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/Revelry-koans_web/views/.*(ex)$},
-      ~r{lib/Revelry-koans_web/templates/.*(eex)$}
+      ~r{lib/revelry-koans_web/views/.*(ex)$},
+      ~r{lib/revelry-koans_web/templates/.*(eex)$}
     ]
   ]
 
@@ -43,11 +43,11 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-config :Revelry-koans, revelry-koans.Repo,
+config :RevelryKoans, RevelryKoans.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "Revelry-koans_dev",
+  database: "RevelryKoans_dev",
   hostname: "localhost",
   port: String.to_integer(System.get_env("PGPORT") || "5432"),
   pool_size: 10

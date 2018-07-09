@@ -1,4 +1,4 @@
-defmodule revelry-koans.DataCase do
+defmodule RevelryKoans.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,21 +16,21 @@ defmodule revelry-koans.DataCase do
 
   using do
     quote do
-      alias revelry-koans.Repo
+      alias RevelryKoans.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import revelry-koans.DataCase
-      import revelry-koans.Factory
+      import RevelryKoans.DataCase
+      import RevelryKoans.Factory
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(revelry-koans.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(RevelryKoans.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(revelry-koans.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(RevelryKoans.Repo, {:shared, self()})
     end
 
     :ok

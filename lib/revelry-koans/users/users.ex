@@ -1,10 +1,10 @@
-defmodule revelry-koans.Users do
+defmodule RevelryKoans.Users do
   @moduledoc """
   Module for interacting with Users
   """
 
   import Ecto.{Query}, warn: false
-  alias revelry-koans.{Repo, User}
+  alias RevelryKoans.{Repo, User}
 
   def create_user(params) do
     %User{}

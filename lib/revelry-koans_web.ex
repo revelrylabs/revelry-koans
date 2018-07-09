@@ -1,12 +1,12 @@
-defmodule revelry-koansWeb do
+defmodule RevelryKoansWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use revelry-koansWeb, :controller
-      use revelry-koansWeb, :view
+      use RevelryKoansWeb, :controller
+      use RevelryKoansWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,17 +19,17 @@ defmodule revelry-koansWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: revelry-koansWeb
+      use Phoenix.Controller, namespace: RevelryKoansWeb
       import Plug.Conn
-      import revelry-koansWeb.Router.Helpers
-      import revelry-koansWeb.Gettext
+      import RevelryKoansWeb.Router.Helpers
+      import RevelryKoansWeb.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/Revelry-koans_web/templates",
-                        namespace: revelry-koansWeb
+      use Phoenix.View, root: "lib/revelry-koans_web/templates",
+                        namespace: RevelryKoansWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
@@ -37,9 +37,9 @@ defmodule revelry-koansWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import revelry-koansWeb.Router.Helpers
-      import revelry-koansWeb.ErrorHelpers
-      import revelry-koansWeb.Gettext
+      import RevelryKoansWeb.Router.Helpers
+      import RevelryKoansWeb.ErrorHelpers
+      import RevelryKoansWeb.Gettext
     end
   end
 
@@ -54,7 +54,7 @@ defmodule revelry-koansWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import revelry-koansWeb.Gettext
+      import RevelryKoansWeb.Gettext
     end
   end
 

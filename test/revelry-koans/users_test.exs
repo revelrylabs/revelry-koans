@@ -1,6 +1,6 @@
-defmodule revelry-koans.Users.Test do
-  use revelry-koans.DataCase
-  alias revelry-koans.Users
+defmodule RevelryKoans.Users.Test do
+  use RevelryKoans.DataCase
+  alias RevelryKoans.Users
 
   test "create" do
     {:ok, user} = Users.create_user(%{

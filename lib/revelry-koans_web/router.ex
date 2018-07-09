@@ -1,6 +1,6 @@
-defmodule revelry-koansWeb.Router do
-  use revelry-koansWeb, :router
-  alias revelry-koansWeb.{RequireAuth, LoadUser}
+defmodule RevelryKoansWeb.Router do
+  use RevelryKoansWeb, :router
+  alias RevelryKoansWeb.{RequireAuth, LoadUser}
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -19,7 +19,7 @@ defmodule revelry-koansWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", revelry-koansWeb do
+  scope "/", RevelryKoansWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
@@ -27,14 +27,14 @@ defmodule revelry-koansWeb.Router do
     post "/sessions/new", SessionController, :create
   end
 
-  scope "/", revelry-koansWeb do
+  scope "/", RevelryKoansWeb do
     pipe_through [:browser, :require_auth]
 
     get "/sessions/delete", SessionController, :delete
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", revelry-koansWeb do
+  # scope "/api", RevelryKoansWeb do
   #   pipe_through :api
   # end
 end

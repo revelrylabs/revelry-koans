@@ -1,5 +1,5 @@
-defmodule revelry-koans.Factory do
-  alias revelry-koans.{User, Repo}
+defmodule RevelryKoans.Factory do
+  alias RevelryKoans.{User, Repo}
 
   def build(:user) do
     %User{

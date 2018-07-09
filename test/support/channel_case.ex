@@ -1,4 +1,4 @@
-defmodule revelry-koansWeb.ChannelCase do
+defmodule RevelryKoansWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule revelry-koansWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint revelry-koansWeb.Endpoint
+      @endpoint RevelryKoansWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(revelry-koans.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(RevelryKoans.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(revelry-koans.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(RevelryKoans.Repo, {:shared, self()})
     end
     :ok
   end

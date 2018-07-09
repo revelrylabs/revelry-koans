@@ -1,8 +1,8 @@
-defmodule revelry-koansWeb.UserSocket do
+defmodule RevelryKoansWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", revelry-koansWeb.RoomChannel
+  # channel "room:*", RevelryKoansWeb.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
@@ -30,7 +30,7 @@ defmodule revelry-koansWeb.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     revelry-koansWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
+  #     RevelryKoansWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil

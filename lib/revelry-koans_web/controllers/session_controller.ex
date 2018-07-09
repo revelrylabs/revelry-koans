@@ -1,6 +1,6 @@
-defmodule revelry-koansWeb.SessionController do
-  use revelry-koansWeb, :controller
-  alias revelry-koans.{Auth, Users}
+defmodule RevelryKoansWeb.SessionController do
+  use RevelryKoansWeb, :controller
+  alias RevelryKoans.{Auth, Users}
 
   def new(conn, _params) do
     render conn, "new.html"

@@ -1,9 +1,9 @@
-defmodule revelry-koans.Mixfile do
+defmodule RevelryKoans.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :Revelry-koans,
+      app: :RevelryKoans,
       version: "0.0.1",
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env),
@@ -21,7 +21,7 @@ defmodule revelry-koans.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {revelry-koans.Application, []},
+      mod: {RevelryKoans.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

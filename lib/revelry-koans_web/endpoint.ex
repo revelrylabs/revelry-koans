@@ -1,14 +1,14 @@
-defmodule revelry-koansWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :Revelry-koans
+defmodule RevelryKoansWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :RevelryKoans
 
-  socket "/socket", revelry-koansWeb.UserSocket
+  socket "/socket", RevelryKoansWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :Revelry-koans, gzip: false,
+    at: "/", from: :RevelryKoans, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,10 +35,10 @@ defmodule revelry-koansWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_Revelry-koans_key",
+    key: "_RevelryKoans_key",
     signing_salt: "Y3sx8ErZ"
 
-  plug revelry-koansWeb.Router
+  plug RevelryKoansWeb.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.

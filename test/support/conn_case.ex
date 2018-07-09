@@ -1,4 +1,4 @@
-defmodule revelry-koansWeb.ConnCase do
+defmodule RevelryKoansWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -19,19 +19,19 @@ defmodule revelry-koansWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      import revelry-koansWeb.Router.Helpers
-      import revelry-koans.Factory
+      import RevelryKoansWeb.Router.Helpers
+      import RevelryKoans.Factory
 
       # The default endpoint for testing
-      @endpoint revelry-koansWeb.Endpoint
+      @endpoint RevelryKoansWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(revelry-koans.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(RevelryKoans.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(revelry-koans.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(RevelryKoans.Repo, {:shared, self()})
     end
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end

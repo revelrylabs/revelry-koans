@@ -1,5 +1,5 @@
-defmodule revelry-koansWeb.PageController do
-  use revelry-koansWeb, :controller
+defmodule RevelryKoansWeb.PageController do
+  use RevelryKoansWeb, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

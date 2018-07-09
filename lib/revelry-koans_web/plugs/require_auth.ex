@@ -1,4 +1,4 @@
-defmodule revelry-koansWeb.RequireAuth do
+defmodule RevelryKoansWeb.RequireAuth do
   @moduledoc """
   Ensures user is logged in
   """

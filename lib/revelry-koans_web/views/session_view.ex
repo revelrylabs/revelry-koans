@@ -1,3 +1,3 @@
-defmodule revelry-koansWeb.SessionView do
-  use revelry-koansWeb, :view
+defmodule RevelryKoansWeb.SessionView do
+  use RevelryKoansWeb, :view
 end

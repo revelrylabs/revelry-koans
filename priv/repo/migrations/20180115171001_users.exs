@@ -1,4 +1,4 @@
-defmodule revelry-koans.Repo.Migrations.Users do
+defmodule RevelryKoans.Repo.Migrations.Users do
   use Ecto.Migration
 
   def change do

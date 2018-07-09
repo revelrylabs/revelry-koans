@@ -1,11 +1,11 @@
-defmodule revelry-koansWeb.LoadUser do
+defmodule RevelryKoansWeb.LoadUser do
   @moduledoc """
   Loads user into connection if
   user has session
   """
 
   import Plug.Conn
-  alias revelry-koans.Users
+  alias RevelryKoans.Users
 
   def init(opts) do
     opts

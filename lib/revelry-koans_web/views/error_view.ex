@@ -1,5 +1,5 @@
-defmodule revelry-koansWeb.ErrorView do
-  use revelry-koansWeb, :view
+defmodule RevelryKoansWeb.ErrorView do
+  use RevelryKoansWeb, :view
 
   def render("404.html", _assigns) do
     "Page not found"

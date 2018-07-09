@@ -1,4 +1,4 @@
-defmodule revelry-koansWeb.ErrorHelpers do
+defmodule RevelryKoansWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule revelry-koansWeb.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(revelry-koansWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(RevelryKoansWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(revelry-koansWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(RevelryKoansWeb.Gettext, "errors", msg, opts)
     end
   end
 end

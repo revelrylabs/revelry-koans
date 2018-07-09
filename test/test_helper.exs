@@ -1,4 +1,3 @@
 ExUnit.start()
 
-Ecto.Adapters.SQL.Sandbox.mode(revelry-koans.Repo, :manual)
-
+Ecto.Adapters.SQL.Sandbox.mode(RevelryKoans.Repo, :manual)

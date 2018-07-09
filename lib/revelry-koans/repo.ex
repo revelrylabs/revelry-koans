@@ -1,5 +1,5 @@
-defmodule revelry-koans.Repo do
-  use Ecto.Repo, otp_app: :Revelry-koans
+defmodule RevelryKoans.Repo do
+  use Ecto.Repo, otp_app: :RevelryKoans
 
   @doc """
   Dynamically loads the repository url from the

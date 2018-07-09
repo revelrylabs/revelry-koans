@@ -1,5 +1,5 @@
-defmodule revelry-koansWeb.PageControllerTest do
-  use revelry-koansWeb.ConnCase
+defmodule RevelryKoansWeb.PageControllerTest do
+  use RevelryKoansWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

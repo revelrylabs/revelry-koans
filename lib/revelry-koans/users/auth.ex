@@ -1,11 +1,11 @@
-defmodule revelry-koans.Auth do
+defmodule RevelryKoans.Auth do
   @moduledoc """
   Handles logging users in and out
   """
 
   import Plug.Conn
   import Comeonin.Bcrypt, only: [checkpw: 2, dummy_checkpw: 0]
-  alias revelry-koans.Users
+  alias RevelryKoans.Users
 
   def login(conn, email, given_pass) do
     case verify_credentials(email, given_pass) do

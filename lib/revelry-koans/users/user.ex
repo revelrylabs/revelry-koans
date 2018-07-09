@@ -1,4 +1,4 @@
-defmodule revelry-koans.User do
+defmodule RevelryKoans.User do
   use Ecto.Schema
   import Ecto.{Query, Changeset}, warn: false
   alias Comeonin.Bcrypt

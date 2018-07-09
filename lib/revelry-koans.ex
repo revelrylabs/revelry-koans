@@ -1,6 +1,6 @@
-defmodule revelry-koans do
+defmodule RevelryKoans do
   @moduledoc """
-  revelry-koans keeps the contexts that define your domain
+  RevelryKoans keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

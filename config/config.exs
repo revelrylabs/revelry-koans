@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :Revelry-koans,
-  ecto_repos: [revelry-koans.Repo]
+config :RevelryKoans,
+  ecto_repos: [RevelryKoans.Repo]
 
 # Configures the endpoint
-config :Revelry-koans, revelry-koansWeb.Endpoint,
+config :RevelryKoans, RevelryKoansWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "jkvhEfnUUy7YNpO65+s3jfhdz4KdJWhRYrQygw+qVdKlqTlx7kl8Ut0jFFnOXCfI",
-  render_errors: [view: revelry-koansWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: revelry-koans.PubSub,
+  render_errors: [view: RevelryKoansWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: RevelryKoans.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
