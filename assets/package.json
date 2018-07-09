@@ -1,0 +1,57 @@
+{
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development",
+    "deploy":
+      "BABEL_ENV=production NODE_ENV=production webpack --mode production"
+  },
+  "dependencies": {
+    "harmonium": "^3.5.3",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^2.5.5",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-minify": "^0.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "csswring": "^6.0.2",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "exports-loader": "^0.7.0",
+    "image-webpack-loader": "^4.2.0",
+    "imports-loader": "^0.8.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.5.3",
+    "postcss-flexbugs-fixes": "^3.0.0",
+    "postcss-loader": "^2.0.6",
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^7.0.1",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "browserslist": [
+    "ie 11",
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions",
+    "last 2 iOS versions"
+  ]
+}
