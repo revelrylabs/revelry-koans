@@ -1,0 +1,4 @@
+js/tests
+--require ./.mocha.setup.js
+--recursive
+--reporter list
